@@ -1,6 +1,6 @@
 # Install FOOTISTA 2019
 
-The current **0.2.18** installer is an unreleased candidate. These instructions describe that candidate; a complete fresh installation and native launch still need acceptance before the public download opens.
+This guide covers **0.2.19, the first public beta**. Fresh setup, website approval, saved-card recovery, a CPU match save, Terminal readback and normal native shutdown have been exercised. Two-PC PvP remains unverified.
 
 ## Requirements
 
@@ -43,7 +43,7 @@ Use **Extracted Files** for the OS Update. The raw **Original PACK**, APP and VH
 
 ## Install the client
 
-1. When the public release opens, download **`installer.zip`** from [wccf.online](https://wccf.online/misc.php?action=wccf_downloads) or this project's [Releases](https://github.com/Forza-WCCF/FOOTISTA-2019/releases).
+1. Download **`installer.zip`** from [wccf.online](https://wccf.online/misc.php?action=wccf_downloads) or this project's [Releases](https://github.com/Forza-WCCF/FOOTISTA-2019/releases).
 2. Extract the whole installer ZIP into a normal folder. Do not run it inside an archive viewer. GitHub's **Source code** downloads are not the installer.
 3. Run **`Install-FOOTISTA.cmd`**. Choose your downloaded `SDEB_1.30.01_20190603145829_0.7z`, or an already extracted game folder.
 4. If asked for supporting files, choose the folder or archive containing the ICF and extracted OS Update downloads.
@@ -74,3 +74,17 @@ When source files and a club profile are on the same NTFS drive, eligible large 
 The installer ZIP is about 50 MB and already contains `client.zip`; a first-time player does not need to download both. Python dependencies and missing runtimes are additional downloads. Normal website and game-server traffic also uses the internet. Setup does not automatically download the MEGA game archive.
 
 If setup reports missing support files, provide them and run setup again at the same destination. Do not make another installation for each retry, or delete an existing club's files. [Troubleshooting](troubleshooting.md) covers the common cases.
+
+## Existing private installations
+
+New installations use the normal installer steps above. For a private build **0.2.17 or earlier** using the same publisher key, make one local signed upgrade before relying on externally hosted automatic updates.
+
+Close the game. In the folder extracted from the new installer ZIP, open PowerShell and set your existing installation path:
+
+```powershell
+$footistaInstall = 'C:\path\to\your\existing\installation'
+$footistaConfig = Get-Content -LiteralPath (Join-Path $footistaInstall 'installation.json') -Raw | ConvertFrom-Json
+& $footistaConfig.python -I -B .\footista_client.py update --installation $footistaInstall --release .\release.json --archive .\client.zip
+```
+
+This uses the installation's existing Python and pinned publisher key. Do not replace that key if it refuses a different publisher. Later published client updates are checked automatically when you launch, with the game closed.

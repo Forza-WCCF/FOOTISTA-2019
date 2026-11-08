@@ -10,6 +10,10 @@ Your clubs use separate local game profiles, Aime identities and printer counter
 
 ## Play and manage your cards
 
+On a clean PC, the panel restores usable printed cards from your selected club's saved inventory. Local print images take priority; otherwise the panel uses the existing website card artwork. If artwork cannot load, a named card placeholder still lets you use the saved card. This does not create another print or change ownership or printer counters.
+
+Original full print images remain on the PC where they were created. A restored card's viewer shows catalogue artwork when those local images are unavailable.
+
 Use **Play Satellite** for tutorials and matches. The formation panel shows the usable cards for the selected club: drag cards onto the pitch, move them, and drag them back to the available cards to take them off. **Reset to saved lineup** restores the saved arrangement.
 
 Use **Open Terminal** for the Digital Card List, scouting and club options. Use its Sort, Asc./Desc., Filter and Reset controls to browse your cards.

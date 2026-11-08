@@ -23,5 +23,5 @@
     "full_size_mega_archive_tested": false,
     "two_pc_pvp_passed": false
   },
-  "notes": "Candidate checksum record only. No public installer release or website activation."
+  "notes": "Superseded before publication by 0.2.19 after the fresh test found an empty saved-card library on a clean profile."
 }

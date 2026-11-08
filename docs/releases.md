@@ -27,6 +27,10 @@ Never attach the original game, a prepared personal installation, player databas
 
 GitHub Releases and Pixeldrain are alternative external hosts, not two required downloads. A draft without uploaded assets is only a release placeholder. Repo creation, tag creation and a checksum record do not publish an installer or activate the website download.
 
-## Current candidate
+## Current public beta
 
-**0.2.18 / sequence 22** is built and signature-verified. Small archive-layout tests and source tests passed. Full-size MEGA extraction and the complete fresh-installer/native rehearsal have not passed yet. Neither a public release nor website activation is authorized by the existence of this candidate record. Two-PC PvP testing remains separate.
+**0.2.19 / sequence 23** fixes the clean-PC saved-card library found during 0.2.18 acceptance. Its only program changes from 0.2.18 are the panel template and README; native pins, bridge, printer code and backend settings are identical.
+
+The actual 0.2.18 CMD installer created the clean private environment; the setup code is byte-identical in 0.2.19. A normal signed update installed 0.2.19 on that same clean profile. Acceptance then verified usable saved cards with zero local BMPs, native registration of the ranked-up replacement, a CPU match save, Terminal readback and normal closes. Printing retains earlier native evidence for its unchanged implementation; no new physical print was performed in this acceptance run.
+
+The full-size MEGA archive was not downloaded, and real two-PC PvP remains unverified. Keep those limits explicit. The manual **Published download check** workflow verifies the public installer and real signed updater path on GitHub's ephemeral runner, without downloading the original game or consuming the publisher's mobile data for a second full download.

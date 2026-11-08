@@ -1,6 +1,15 @@
 # Changes
 
-## 0.2.18 — unreleased candidate
+## 0.2.19 — first public beta
+
+- Usable printed cards are restored from your saved club on a clean PC, even with an empty local print-image folder.
+- Existing local print images take priority; restored cards use website artwork or a named placeholder. Ownership, progress and printer counters are not changed by restoring the library.
+- Includes game archive/folder setup, separate ICF / OS Update discovery, website-connected clubs, more English and signed client updates from external hosting.
+- The fresh-install check caught the missing library in 0.2.18; 0.2.19 was verified through native card registration, a CPU match save, Terminal readback and clean shutdown. No new physical print was performed in that acceptance run; the unchanged native printer pipeline retains its earlier acceptance evidence.
+
+Two-PC PvP and the full-size MEGA archive container remain unverified. Archive layout tests and the verified extracted game folder were used during acceptance.
+
+## 0.2.18 — superseded before publication
 
 The next website release brings together the changes tested in the private client builds:
 
@@ -10,7 +19,7 @@ The next website release brings together the changes tested in the private clien
 - The Terminal hides the empty expiry display when no scout tickets remain.
 - Installer and update downloads can use external hosting while preserving signature, size and checksum checks.
 
-This candidate is **not a published download**. Source tests and the private gameplay checks do not replace the final fresh-installer/native acceptance of these exact release bytes. See [the release procedure](docs/releases.md) and [the public candidate record](releases/0.2.18.json).
+This candidate was **not published**: a clean existing-club profile had an empty card library. The correction is included in 0.2.19. See [the release procedure](docs/releases.md) and [the public candidate record](releases/0.2.18.json).
 
 ## Private acceptance leading to this candidate
 

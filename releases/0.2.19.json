@@ -1,0 +1,29 @@
+{
+  "version": "0.2.19",
+  "sequence": 23,
+  "status": "prerelease",
+  "public_key_sha256": "124756359e4e1aec7d8f6690b31310d508e78e84f62236fbe754053c22cf438a",
+  "assets": {
+    "installer.zip": {
+      "bytes": 49432848,
+      "sha256": "f429ea95663a61ce31224885a4aed8d26433c156bf39c31f1d0ea7c611a33ff3"
+    },
+    "client.zip": {
+      "bytes": 49773494,
+      "sha256": "8a8f78cfb9a81ca3aef5ec0f1e22c041f44c78830a49aaac30e80ef72be61325"
+    },
+    "release.json": {
+      "bytes": 152409,
+      "sha256": "834c2cde7f271aee202cd23a3cd96c7c632682eac9e7ba930e280eefc8098191"
+    }
+  },
+  "acceptance": {
+    "source_checks_passed": true,
+    "fresh_install_native_cycle_passed": true,
+    "full_size_mega_archive_tested": false,
+    "two_pc_pvp_passed": false,
+    "new_physical_print_in_this_run": false,
+    "unchanged_native_print_pipeline_previously_accepted": true
+  },
+  "notes": "Fresh setup used 0.2.18 installer code, identical in 0.2.19; signed 0.2.19 was then tested on that clean profile through card recovery, native match save, Terminal readback and normal shutdown."
+}

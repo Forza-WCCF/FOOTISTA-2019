@@ -18,26 +18,26 @@ Play **WCCF FOOTISTA 2019, version 1.30.01 / 2019 Series 3**, on a Windows PC wi
 
 The client adds a club picker, a formation panel for your cards, English text and signed updates. Your website account connects your clubs to your PC; each club keeps its own game profile and printer history.
 
-> **Release status:** the first website release is being prepared. **0.2.18 is an unreleased candidate**, with the final fresh-install and native gameplay check still pending. There is no public installer in this repository yet. Follow [Releases](https://github.com/Forza-WCCF/FOOTISTA-2019/releases) for accepted downloads.
+> **Public beta 0.2.19:** [Download the installer](https://github.com/Forza-WCCF/FOOTISTA-2019/releases/download/v0.2.19/installer.zip) · [Release notes](https://github.com/Forza-WCCF/FOOTISTA-2019/releases/tag/v0.2.19). The installer is about 50 MB and includes the client archive. Supply the game separately using the guide below.
 
 ## What you get
 
 | Feature | In the client |
 | :--- | :--- |
 | **Your clubs** | Approve your PC on the website, then choose a club in the club picker. |
-| **Formation panel** | Put your owned cards on the pitch, move them and return them to the available cards. |
+| **Formation panel** | Your usable saved printed cards appear on a clean PC too. Put them on the pitch, move them and return them to the available cards. |
 | **Satellite and Terminal** | Play matches in Satellite mode; open Terminal for scouting, your card list and club options. |
 | **English** | Translated tutorials, story subtitles and Terminal screens. Some later screens still need visual checks. |
 | **Card progression** | Scouting, printing and rank-up work with your club's saved cards. |
 | **Signed updates** | The client verifies its publisher, files and archive before applying an update. |
 
-Basic tutorials, match saves, logout, title changes, scouting and Terminal sorting/filtering have been tested in the game. **Matches between two real PCs still need testing**; this page does not promise working PvP.
+Basic tutorials, match saves, logout, title changes, scouting and Terminal sorting/filtering have been tested in the game. The clean-install check also verified website approval, saved-card recovery without local print images, a CPU match save and Terminal readback. **Matches between two real PCs still need testing**; this page does not promise working PvP.
 
 ## Start here
 
 1. Read the [requirements and installation guide](docs/installation.md).
 2. Prepare the **1.30.01 game archive** and the separate **ICF / OS Update** downloads described there.
-3. When an accepted installer is available, download **`installer.zip`** from the website or this repository's Releases. Extract it and run **`Install-FOOTISTA.cmd`**.
+3. Download **`installer.zip`** from the website or this repository's Releases. Extract it and run **`Install-FOOTISTA.cmd`**.
 4. Open **`MANAGE-CLUBS.cmd`**, choose **Connect**, and approve the displayed code through your signed-in website account.
 5. Choose your club and select **Play Satellite** or **Open Terminal**.
 
@@ -62,6 +62,6 @@ The game is supplied separately. The installer accepts a local `.7z`, `.zip` or 
 - [Report a problem](https://github.com/Forza-WCCF/FOOTISTA-2019/issues/new/choose)
 - [Support and private information](SUPPORT.md)
 
-This repository contains the public guides, release records and verification tools. Accepted client packages will be attached to Releases; GitHub's automatic **Source code** ZIP is the repository contents, not the installer. The client package includes its Python source. This repository does not mirror the game, player saves, credentials or publisher's private signing key.
+This repository contains the public guides, release records and verification tools. Client packages are attached to Releases; GitHub's automatic **Source code** ZIP is the repository contents, not the installer. The client package includes its Python source. This repository does not mirror the game, player saves, credentials or publisher's private signing key.
 
 A community project by [Forza-WCCF](https://github.com/Forza-WCCF), independent of SEGA and the original game's publishers. Game and football branding belong to their respective owners.
