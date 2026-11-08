@@ -1,0 +1,41 @@
+name: Installation help
+description: Get help with the installer, game layout or required runtimes.
+title: "[Setup] "
+body:
+  - type: markdown
+    attributes:
+      value: "First read docs/installation.md and docs/troubleshooting.md. Do not upload game files, credentials or your complete installation."
+  - type: input
+    id: version
+    attributes:
+      label: Installer version and Windows version
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: What did you select as the game source?
+      options:
+        - SDEB 1.30.01 .7z
+        - ZIP archive
+        - Extracted folder
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: support
+    attributes:
+      label: Did you provide the matching ICF and extracted OS Update files?
+      options:
+        - Yes, both
+        - Only one
+        - No / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Where did setup stop?
+      description: Include the exact error, what you selected and any retry at the same destination. Remove private details from screenshots.
+    validations:
+      required: true

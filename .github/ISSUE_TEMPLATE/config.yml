@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation guide
+    url: https://github.com/Forza-WCCF/FOOTISTA-2019/blob/main/docs/installation.md
+    about: Required runtimes, the MEGA archive layout and setup steps.
+  - name: Website and your account
+    url: https://wccf.online
+    about: Sign in to manage your clubs and PC approval.

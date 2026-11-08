@@ -1,0 +1,45 @@
+name: Client problem
+description: Report a repeatable FOOTISTA client or gameplay problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Include the exact error where possible. Issues are public: do not attach credentials, approval codes, player databases or a complete installation."
+  - type: input
+    id: version
+    attributes:
+      label: Client version
+      placeholder: "For example: 0.2.18 (private candidate)"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "For example: Windows 11 x64, version 25H2"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where did it happen?
+      options:
+        - Club picker
+        - Satellite / tutorial / match
+        - Terminal / scouting / card list
+        - Update
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and result
+      description: What did you do, what did you expect and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error or screenshot
+      description: Paste the exact error or a short log excerpt. Remove personal information first.

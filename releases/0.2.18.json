@@ -1,0 +1,27 @@
+{
+  "version": "0.2.18",
+  "sequence": 22,
+  "status": "unreleased-candidate",
+  "public_key_sha256": "124756359e4e1aec7d8f6690b31310d508e78e84f62236fbe754053c22cf438a",
+  "assets": {
+    "installer.zip": {
+      "bytes": 49431266,
+      "sha256": "9c3f3c750b8d7255316a919a64cb2758e0e01441ba08f974293063c05b4de2fc"
+    },
+    "client.zip": {
+      "bytes": 49772123,
+      "sha256": "b02ff9a63d0e6852acb27cc7eb2f7b645a2d1609ccc6ae0aedbadf9879343d62"
+    },
+    "release.json": {
+      "bytes": 152409,
+      "sha256": "b09be64a9408896f708f5607cd504b0db4cbaa8ae415c6e50f9d2fd4c5f9e41d"
+    }
+  },
+  "acceptance": {
+    "source_checks_passed": true,
+    "fresh_install_native_cycle_passed": false,
+    "full_size_mega_archive_tested": false,
+    "two_pc_pvp_passed": false
+  },
+  "notes": "Candidate checksum record only. No public installer release or website activation."
+}

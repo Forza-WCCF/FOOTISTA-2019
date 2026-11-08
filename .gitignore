@@ -1,0 +1,34 @@
+# Only the public repository's intended folders and root documents are tracked.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CHANGELOG.md
+!/CONTRIBUTING.md
+!/SUPPORT.md
+!/.github/
+!/assets/
+!/docs/
+!/releases/
+!/tools/
+!/tests/
+
+# Generated files, downloads and private state never belong here.
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+*.zip
+*.7z
+*.pak
+*.exe
+*.dll
+*.dpapi
+*.key
+*.pem
+*.db
+*.sqlite*
+*.log
+.env*
+Thumbs.db
+.DS_Store
