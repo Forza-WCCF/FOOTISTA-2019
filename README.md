@@ -1,4 +1,11 @@
 <p align="center">
+  <strong>Public beta 0.2.19</strong> &nbsp; · &nbsp;
+  <a href="https://github.com/Forza-WCCF/FOOTISTA-2019/releases/tag/v0.2.19"><strong>Release and downloads</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/Forza-WCCF/FOOTISTA-2019/releases/download/v0.2.19/installer.zip"><strong>Download installer.zip</strong></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="FOOTISTA 2019 — Forza WCCF community client" width="100%">
 </p>
 
